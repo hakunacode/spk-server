@@ -1,0 +1,95 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db_spkdb",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "db_spkdb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db_spkdb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db_spkdb",
+    "public": false
+  },
+  "auth": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "Accesstoken": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "Rolemapping": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "container": {
+    "dataSource": "storage",
+    "public": true
+  },
+  "TmMahasiswa": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TmPegawai": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TmDosen": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TbUser": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TbCalendar": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TbChatroom": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TbChatuserto": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TbChatuser": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TbChatroomlist": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TbChatroomdetail": {
+    "dataSource": "db_spkdb",
+    "public": true
+  }
+}

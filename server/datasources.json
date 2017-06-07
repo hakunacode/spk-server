@@ -1,0 +1,22 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "db_spkdb": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "db_spkdb",
+    "password": "",
+    "name": "db_spkdb",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage"
+  }
+}

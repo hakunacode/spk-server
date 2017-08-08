@@ -10,7 +10,8 @@
       "loopback/common/mixins",
       "loopback/server/mixins",
       "../common/mixins",
-      "./mixins"
+      "./mixins",
+      "../node_modules/@mean-expert/loopback-component-realtime/dist/mixins"
     ]
   },
   "User": {
@@ -40,10 +41,6 @@
     "dataSource": "db_spkdb",
     "public": true
   },
-  "Accesstoken": {
-    "dataSource": "db_spkdb",
-    "public": true
-  },
   "Rolemapping": {
     "dataSource": "db_spkdb",
     "public": true
@@ -52,15 +49,7 @@
     "dataSource": "storage",
     "public": true
   },
-  "TmMahasiswa": {
-    "dataSource": "db_spkdb",
-    "public": true
-  },
   "TmPegawai": {
-    "dataSource": "db_spkdb",
-    "public": true
-  },
-  "TmDosen": {
     "dataSource": "db_spkdb",
     "public": true
   },
@@ -89,6 +78,54 @@
     "public": true
   },
   "TbChatroomdetail": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TbDetailKomptensiDosen": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TmFungsionalDosen": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TmKuota": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TmKompetensiDosen": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TmPendidikanDosen": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TbKriteria": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TbHistoriKlasifikasi": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TmDosen": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "TmMahasiswa": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "Tmviewhistorykriteria": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "Chatroom": {
+    "dataSource": "db_spkdb",
+    "public": true
+  },
+  "Chatisi": {
     "dataSource": "db_spkdb",
     "public": true
   }

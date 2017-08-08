@@ -93,7 +93,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "tmmahasiswa": {
+      "type": "belongsTo",
+      "model": "TmMahasiswa",
+      "foreignKey": "useridto",
+      "primaryKey": "userid"
+    }
+  },
   "acls": [],
   "methods": {}
 }

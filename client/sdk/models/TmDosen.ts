@@ -2,33 +2,37 @@
 
 declare var Object: any;
 export interface TmDosenInterface {
-  "id"?: number;
-  "alamat"?: string;
-  "createddate"?: Date;
-  "fungsional"?: string;
-  "jeniskelamin"?: string;
-  "kompetensi"?: string;
-  "kuota"?: string;
-  "nama"?: string;
-  "nidn"?: string;
-  "pendidikan"?: string;
   "telephone"?: string;
   "ttl"?: string;
+  "pictures"?: string;
+  "created"?: Date;
+  "jeniskelamin"?: string;
+  "alamat"?: string;
+  "id"?: number;
+  "idFungsional": number;
+  "userid"?: number;
+  "idKompetensi": number;
+  "idKuota": number;
+  "idPendidikan": number;
+  "nidn": string;
+  "nama": string;
 }
 
 export class TmDosen implements TmDosenInterface {
-  "id": number;
-  "alamat": string;
-  "createddate": Date;
-  "fungsional": string;
-  "jeniskelamin": string;
-  "kompetensi": string;
-  "kuota": string;
-  "nama": string;
-  "nidn": string;
-  "pendidikan": string;
   "telephone": string;
   "ttl": string;
+  "pictures": string;
+  "created": Date;
+  "jeniskelamin": string;
+  "alamat": string;
+  "id": number;
+  "idFungsional": number;
+  "userid": number;
+  "idKompetensi": number;
+  "idKuota": number;
+  "idPendidikan": number;
+  "nidn": string;
+  "nama": string;
   constructor(data?: TmDosenInterface) {
     Object.assign(this, data);
   }
@@ -60,52 +64,60 @@ export class TmDosen implements TmDosenInterface {
       name: 'TmDosen',
       plural: 'TmDosens',
       properties: {
-        "id": {
-          name: 'id',
-          type: 'number'
-        },
-        "alamat": {
-          name: 'alamat',
-          type: 'string'
-        },
-        "createddate": {
-          name: 'createddate',
-          type: 'Date'
-        },
-        "fungsional": {
-          name: 'fungsional',
-          type: 'string'
-        },
-        "jeniskelamin": {
-          name: 'jeniskelamin',
-          type: 'string'
-        },
-        "kompetensi": {
-          name: 'kompetensi',
-          type: 'string'
-        },
-        "kuota": {
-          name: 'kuota',
-          type: 'string'
-        },
-        "nama": {
-          name: 'nama',
-          type: 'string'
-        },
-        "nidn": {
-          name: 'nidn',
-          type: 'string'
-        },
-        "pendidikan": {
-          name: 'pendidikan',
-          type: 'string'
-        },
         "telephone": {
           name: 'telephone',
           type: 'string'
         },
         "ttl": {
           name: 'ttl',
+          type: 'string'
+        },
+        "pictures": {
+          name: 'pictures',
+          type: 'string'
+        },
+        "created": {
+          name: 'created',
+          type: 'Date'
+        },
+        "jeniskelamin": {
+          name: 'jeniskelamin',
+          type: 'string'
+        },
+        "alamat": {
+          name: 'alamat',
+          type: 'string'
+        },
+        "id": {
+          name: 'id',
+          type: 'number'
+        },
+        "idFungsional": {
+          name: 'idFungsional',
+          type: 'number'
+        },
+        "userid": {
+          name: 'userid',
+          type: 'number'
+        },
+        "idKompetensi": {
+          name: 'idKompetensi',
+          type: 'number'
+        },
+        "idKuota": {
+          name: 'idKuota',
+          type: 'number'
+        },
+        "idPendidikan": {
+          name: 'idPendidikan',
+          type: 'number'
+        },
+        "nidn": {
+          name: 'nidn',
+          type: 'string'
+        },
+        "nama": {
+          name: 'nama',
           type: 'string'
         },
       },

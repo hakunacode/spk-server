@@ -2,37 +2,41 @@
 
 declare var Object: any;
 export interface TmMahasiswaInterface {
+  "userid"?: number;
   "nim": string;
-  "userid": number;
   "nama": string;
-  "email"?: string;
+  "judulskripsi"?: string;
   "pictures"?: string;
-  "jenisKelamin"?: string;
-  "alamat"?: string;
-  "ttl"?: string;
-  "jenjang"?: string;
-  "tanggalMasuk"?: Date;
-  "jurusan"?: string;
-  "createddate"?: Date;
+  "kategori1": number;
+  "kategori2": number;
+  "kategori3": number;
+  "periode": number;
   "id"?: number;
-  "telephone"?: string;
+  "jeniskelamin"?: string;
+  "tahunmasuk"?: string;
+  "telphone"?: string;
+  "ttl"?: string;
+  "kelas"?: string;
+  "proses"?: string;
 }
 
 export class TmMahasiswa implements TmMahasiswaInterface {
-  "nim": string;
   "userid": number;
+  "nim": string;
   "nama": string;
-  "email": string;
+  "judulskripsi": string;
   "pictures": string;
-  "jenisKelamin": string;
-  "alamat": string;
-  "ttl": string;
-  "jenjang": string;
-  "tanggalMasuk": Date;
-  "jurusan": string;
-  "createddate": Date;
+  "kategori1": number;
+  "kategori2": number;
+  "kategori3": number;
+  "periode": number;
   "id": number;
-  "telephone": string;
+  "jeniskelamin": string;
+  "tahunmasuk": string;
+  "telphone": string;
+  "ttl": string;
+  "kelas": string;
+  "proses": string;
   constructor(data?: TmMahasiswaInterface) {
     Object.assign(this, data);
   }
@@ -64,60 +68,68 @@ export class TmMahasiswa implements TmMahasiswaInterface {
       name: 'TmMahasiswa',
       plural: 'TmMahasiswas',
       properties: {
-        "nim": {
-          name: 'nim',
-          type: 'string'
-        },
         "userid": {
           name: 'userid',
           type: 'number'
+        },
+        "nim": {
+          name: 'nim',
+          type: 'string'
         },
         "nama": {
           name: 'nama',
           type: 'string'
         },
-        "email": {
-          name: 'email',
+        "judulskripsi": {
+          name: 'judulskripsi',
           type: 'string'
         },
         "pictures": {
           name: 'pictures',
           type: 'string'
         },
-        "jenisKelamin": {
-          name: 'jenisKelamin',
+        "kategori1": {
+          name: 'kategori1',
+          type: 'number'
+        },
+        "kategori2": {
+          name: 'kategori2',
+          type: 'number'
+        },
+        "kategori3": {
+          name: 'kategori3',
+          type: 'number'
+        },
+        "periode": {
+          name: 'periode',
+          type: 'number'
+        },
+        "id": {
+          name: 'id',
+          type: 'number'
+        },
+        "jeniskelamin": {
+          name: 'jeniskelamin',
           type: 'string'
         },
-        "alamat": {
-          name: 'alamat',
+        "tahunmasuk": {
+          name: 'tahunmasuk',
+          type: 'string'
+        },
+        "telphone": {
+          name: 'telphone',
           type: 'string'
         },
         "ttl": {
           name: 'ttl',
           type: 'string'
         },
-        "jenjang": {
-          name: 'jenjang',
+        "kelas": {
+          name: 'kelas',
           type: 'string'
         },
-        "tanggalMasuk": {
-          name: 'tanggalMasuk',
-          type: 'Date'
-        },
-        "jurusan": {
-          name: 'jurusan',
-          type: 'string'
-        },
-        "createddate": {
-          name: 'createddate',
-          type: 'Date'
-        },
-        "id": {
-          name: 'id',
-          type: 'number'
-        },
-        "telephone": {
-          name: 'telephone',
+        "proses": {
+          name: 'proses',
           type: 'string'
         },
       },

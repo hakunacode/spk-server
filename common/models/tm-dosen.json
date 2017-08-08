@@ -10,6 +10,102 @@
     "table": "tm_dosen"
   },
   "properties": {
+    "telephone": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "telephone",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "ttl": {
+      "type": "String",
+      "required": false,
+      "length": 500,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ttl",
+        "dataType": "varchar",
+        "dataLength": 500,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "pictures": {
+      "type": "String",
+      "required": false,
+      "length": 8000,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "pictures",
+        "dataType": "varchar",
+        "dataLength": 8000,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": false
+    },
+    "created": {
+      "type": "Date",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "created",
+        "dataType": "datetime",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "jeniskelamin": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "jenisKelamin",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "alamat": {
+      "type": "String",
+      "required": false,
+      "length": 1000,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "alamat",
+        "dataType": "varchar",
+        "dataLength": 1000,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
     "id": {
       "type": "Number",
       "id": true,
@@ -27,121 +123,89 @@
       },
       "_selectable": false
     },
-    "alamat": {
-      "type": "String",
-      "required": false,
-      "length": 512,
-      "precision": null,
-      "scale": null,
+    "idFungsional": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
       "mysql": {
-        "columnName": "alamat",
-        "dataType": "varchar",
-        "dataLength": 512,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
+        "columnName": "id_fungsional",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
     },
-    "createddate": {
-      "type": "Date",
+    "userid": {
+      "type": "Number",
       "required": false,
       "length": null,
-      "precision": null,
-      "scale": null,
+      "precision": 10,
+      "scale": 0,
       "mysql": {
-        "columnName": "createddate",
-        "dataType": "datetime",
+        "columnName": "userid",
+        "dataType": "int",
         "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
     },
-    "fungsional": {
-      "type": "String",
-      "required": false,
-      "length": 50,
-      "precision": null,
-      "scale": null,
+    "idKompetensi": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
       "mysql": {
-        "columnName": "fungsional",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
+        "columnName": "id_kompetensi",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
     },
-    "jeniskelamin": {
-      "type": "String",
-      "required": false,
-      "length": 1,
-      "precision": null,
-      "scale": null,
+    "idKuota": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
       "mysql": {
-        "columnName": "jeniskelamin",
-        "dataType": "varchar",
-        "dataLength": 1,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
+        "columnName": "id_kuota",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
     },
-    "kompetensi": {
-      "type": "String",
-      "required": false,
-      "length": 50,
-      "precision": null,
-      "scale": null,
+    "idPendidikan": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
       "mysql": {
-        "columnName": "kompetensi",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
+        "columnName": "id_pendidikan",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
       },
-      "_selectable": false
-    },
-    "kuota": {
-      "type": "String",
-      "required": false,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "kuota",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
-    "nama": {
-      "type": "String",
-      "required": false,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "nama",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
-      },
-      "_selectable": false
+      "_selectable": true
     },
     "nidn": {
       "type": "String",
-      "required": false,
+      "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
@@ -151,57 +215,25 @@
         "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "N"
+        "nullable": "Y"
       },
-      "_selectable": false
+      "_selectable": true
     },
-    "pendidikan": {
+    "nama": {
       "type": "String",
-      "required": false,
+      "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "pendidikan",
+        "columnName": "nama",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "N"
+        "nullable": "Y"
       },
-      "_selectable": false
-    },
-    "telephone": {
-      "type": "String",
-      "required": false,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "telephone",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
-    "ttl": {
-      "type": "String",
-      "required": false,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "ttl",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
-      },
-      "_selectable": false
+      "_selectable": true
     }
   },
   "validations": [],

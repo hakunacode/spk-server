@@ -1,4 +1,7 @@
 /* tslint:disable */
+import {
+  TmMahasiswa
+} from '../index';
 
 declare var Object: any;
 export interface TbChatroomlistInterface {
@@ -7,6 +10,7 @@ export interface TbChatroomlistInterface {
   "userid": number;
   "useridto": number;
   "chatroomid": number;
+  tmmahasiswa?: TmMahasiswa;
 }
 
 export class TbChatroomlist implements TbChatroomlistInterface {
@@ -15,6 +19,7 @@ export class TbChatroomlist implements TbChatroomlistInterface {
   "userid": number;
   "useridto": number;
   "chatroomid": number;
+  tmmahasiswa: TmMahasiswa;
   constructor(data?: TbChatroomlistInterface) {
     Object.assign(this, data);
   }
@@ -68,6 +73,11 @@ export class TbChatroomlist implements TbChatroomlistInterface {
         },
       },
       relations: {
+        tmmahasiswa: {
+          name: 'tmmahasiswa',
+          type: 'TmMahasiswa',
+          model: 'TmMahasiswa'
+        },
       }
     }
   }

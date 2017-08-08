@@ -10,6 +10,22 @@
     "table": "tm_mahasiswa"
   },
   "properties": {
+    "userid": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "userid",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
     "nim": {
       "type": "String",
       "required": true,
@@ -26,14 +42,62 @@
       },
       "_selectable": false
     },
-    "userid": {
+    "nama": {
+      "type": "String",
+      "required": true,
+      "length": 500,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "nama",
+        "dataType": "varchar",
+        "dataLength": 500,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "judulskripsi": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "JudulSkripsi",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "pictures": {
+      "type": "String",
+      "required": false,
+      "length": 500,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "pictures",
+        "dataType": "varchar",
+        "dataLength": 500,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": false
+    },
+    "kategori1": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": 10,
       "scale": 0,
       "mysql": {
-        "columnName": "userid",
+        "columnName": "kategori_1",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,
@@ -42,165 +106,53 @@
       },
       "_selectable": false
     },
-    "nama": {
-      "type": "String",
+    "kategori2": {
+      "type": "Number",
       "required": true,
-      "length": 100,
-      "precision": null,
-      "scale": null,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
       "mysql": {
-        "columnName": "nama",
-        "dataType": "varchar",
-        "dataLength": 100,
-        "dataPrecision": null,
-        "dataScale": null,
+        "columnName": "kategori_2",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
         "nullable": "N"
       },
       "_selectable": false
     },
-    "email": {
-      "type": "String",
-      "required": false,
-      "length": 100,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "email",
-        "dataType": "varchar",
-        "dataLength": 100,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "pictures": {
-      "type": "String",
-      "required": false,
-      "length": 100,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "pictures",
-        "dataType": "varchar",
-        "dataLength": 100,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "jenisKelamin": {
-      "type": "String",
-      "required": false,
-      "length": 1,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "jenis_kelamin",
-        "dataType": "varchar",
-        "dataLength": 1,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "alamat": {
-      "type": "String",
-      "required": false,
-      "length": 1000,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "alamat",
-        "dataType": "varchar",
-        "dataLength": 1000,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "ttl": {
-      "type": "String",
-      "required": false,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "ttl",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "jenjang": {
-      "type": "String",
-      "required": false,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "jenjang",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "tanggalMasuk": {
-      "type": "Date",
-      "required": false,
+    "kategori3": {
+      "type": "Number",
+      "required": true,
       "length": null,
-      "precision": null,
-      "scale": null,
+      "precision": 10,
+      "scale": 0,
       "mysql": {
-        "columnName": "tanggal_masuk",
-        "dataType": "datetime",
+        "columnName": "kategori_3",
+        "dataType": "int",
         "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
       },
-      "_selectable": true
+      "_selectable": false
     },
-    "jurusan": {
-      "type": "String",
-      "required": false,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "jurusan",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
-    },
-    "createddate": {
-      "type": "Date",
-      "required": false,
+    "periode": {
+      "type": "Number",
+      "required": true,
       "length": null,
-      "precision": null,
-      "scale": null,
+      "precision": 10,
+      "scale": 0,
       "mysql": {
-        "columnName": "createddate",
-        "dataType": "datetime",
+        "columnName": "periode",
+        "dataType": "int",
         "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
       },
-      "_selectable": true
+      "_selectable": false
     },
     "id": {
       "type": "Number",
@@ -219,16 +171,96 @@
       },
       "_selectable": false
     },
-    "telephone": {
+    "jeniskelamin": {
       "type": "String",
       "required": false,
-      "length": 100,
+      "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "telephone",
+        "columnName": "jeniskelamin",
         "dataType": "varchar",
-        "dataLength": 100,
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "tahunmasuk": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "tahunMasuk",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "telphone": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "telphone",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "ttl": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "ttl",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "kelas": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "kelas",
+        "dataType": "varchar",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "proses": {
+      "type": "String",
+      "required": false,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "proses",
+        "dataType": "varchar",
+        "dataLength": 1,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "N"

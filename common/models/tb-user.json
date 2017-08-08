@@ -1,6 +1,6 @@
 {
   "name": "TbUser",
-  "base": "PersistedModel",
+  "base": "User",
   "idInjection": false,
   "options": {
     "validateUpsert": true
@@ -12,7 +12,7 @@
   "properties": {
     "username": {
       "type": "String",
-      "required": false,
+      "required": true,
       "length": 512,
       "precision": null,
       "scale": null,
@@ -28,7 +28,7 @@
     },
     "password": {
       "type": "String",
-      "required": false,
+      "required": true,
       "length": 512,
       "precision": null,
       "scale": null,
@@ -58,6 +58,22 @@
       },
       "_selectable": true
     },
+    "isuser": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "isuser",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
     "createddate": {
       "type": "Date",
       "required": false,
@@ -73,6 +89,38 @@
         "nullable": "Y"
       },
       "_selectable": true
+    },
+    "realm": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "realm",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "email": {
+      "type": "String",
+      "required": false,
+      "length": 512,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "email",
+        "dataType": "varchar",
+        "dataLength": 512,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": false
     },
     "id": {
       "type": "Number",

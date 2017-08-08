@@ -44,13 +44,14 @@ import { CommonModule } from '@angular/common';
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CookieBrowser } from './storage/cookie.browser';
 import { StorageBrowser } from './storage/storage.browser';
+import { SocketBrowser } from './sockets/socket.browser';
+import { SocketDriver } from './sockets/socket.driver';
+import { SocketConnection } from './sockets/socket.connections';
+import { RealTime } from './services/core/real.time';
 import { AuthApi } from './services/custom/Auth';
-import { AccesstokenApi } from './services/custom/Accesstoken';
 import { RolemappingApi } from './services/custom/Rolemapping';
 import { ContainerApi } from './services/custom/Container';
-import { TmMahasiswaApi } from './services/custom/TmMahasiswa';
 import { TmPegawaiApi } from './services/custom/TmPegawai';
-import { TmDosenApi } from './services/custom/TmDosen';
 import { TbUserApi } from './services/custom/TbUser';
 import { TbCalendarApi } from './services/custom/TbCalendar';
 import { TbChatroomApi } from './services/custom/TbChatroom';
@@ -58,6 +59,18 @@ import { TbChatusertoApi } from './services/custom/TbChatuserto';
 import { TbChatuserApi } from './services/custom/TbChatuser';
 import { TbChatroomlistApi } from './services/custom/TbChatroomlist';
 import { TbChatroomdetailApi } from './services/custom/TbChatroomdetail';
+import { TbDetailKomptensiDosenApi } from './services/custom/TbDetailKomptensiDosen';
+import { TmFungsionalDosenApi } from './services/custom/TmFungsionalDosen';
+import { TmKuotaApi } from './services/custom/TmKuota';
+import { TmKompetensiDosenApi } from './services/custom/TmKompetensiDosen';
+import { TmPendidikanDosenApi } from './services/custom/TmPendidikanDosen';
+import { TbKriteriaApi } from './services/custom/TbKriteria';
+import { TbHistoriKlasifikasiApi } from './services/custom/TbHistoriKlasifikasi';
+import { TmDosenApi } from './services/custom/TmDosen';
+import { TmMahasiswaApi } from './services/custom/TmMahasiswa';
+import { TmviewhistorykriteriaApi } from './services/custom/Tmviewhistorykriteria';
+import { ChatroomApi } from './services/custom/Chatroom';
+import { ChatisiApi } from './services/custom/Chatisi';
 /**
 * @module SDKBrowserModule
 * @description
@@ -72,7 +85,8 @@ import { TbChatroomdetailApi } from './services/custom/TbChatroomdetail';
   declarations: [ ],
   exports:      [ ],
   providers:    [
-    ErrorHandler
+    ErrorHandler,
+    SocketConnection
   ]
 })
 export class SDKBrowserModule {
@@ -87,13 +101,11 @@ export class SDKBrowserModule {
         LoggerService,
         JSONSearchParams,
         SDKModels,
+        RealTime,
         AuthApi,
-        AccesstokenApi,
         RolemappingApi,
         ContainerApi,
-        TmMahasiswaApi,
         TmPegawaiApi,
-        TmDosenApi,
         TbUserApi,
         TbCalendarApi,
         TbChatroomApi,
@@ -101,8 +113,21 @@ export class SDKBrowserModule {
         TbChatuserApi,
         TbChatroomlistApi,
         TbChatroomdetailApi,
+        TbDetailKomptensiDosenApi,
+        TmFungsionalDosenApi,
+        TmKuotaApi,
+        TmKompetensiDosenApi,
+        TmPendidikanDosenApi,
+        TbKriteriaApi,
+        TbHistoriKlasifikasiApi,
+        TmDosenApi,
+        TmMahasiswaApi,
+        TmviewhistorykriteriaApi,
+        ChatroomApi,
+        ChatisiApi,
         internalStorageProvider,
-        { provide: SDKStorage, useClass: StorageBrowser }
+        { provide: SDKStorage, useClass: StorageBrowser },
+        { provide: SocketDriver, useClass: SocketBrowser }
       ]
     };
   }

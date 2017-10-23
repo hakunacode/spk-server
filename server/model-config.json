@@ -128,5 +128,9 @@
   "Chatisi": {
     "dataSource": "db_spkdb",
     "public": true
+  },
+  "Tviewgroupdata": {
+    "dataSource": "db_spkdb",
+    "public": true
   }
 }

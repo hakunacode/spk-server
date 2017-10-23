@@ -2,10 +2,6 @@
 
 declare var Object: any;
 export interface TmviewhistorykriteriaInterface {
-  "idMahasiswa": number;
-  "idDosen": number;
-  "bobot": number;
-  "hasil": number;
   "nidn"?: string;
   "namadsn"?: string;
   "idPendidikan"?: number;
@@ -13,21 +9,25 @@ export interface TmviewhistorykriteriaInterface {
   "idKompetensi"?: number;
   "idKuota"?: number;
   "telephone"?: string;
-  "nim": string;
-  "periode": number;
-  "namamhs": string;
-  "kategori1": number;
-  "kategori2": number;
-  "kategori3": number;
-  "judulskripsi": string;
-  "id": number;
+  "hasil"?: number;
+  "bobot"?: number;
+  "idDosen"?: number;
+  "id"?: number;
+  "idMahasiswa"?: number;
+  "judulskripsi"?: string;
+  "kategori1"?: number;
+  "kategori2"?: number;
+  "kategori3"?: number;
+  "useriddsn"?: number;
+  "useridmhs"?: number;
+  "namamhs"?: string;
+  "picturesdsn"?: string;
+  "picturesmhs"?: string;
+  "nim"?: string;
+  "periode"?: number;
 }
 
 export class Tmviewhistorykriteria implements TmviewhistorykriteriaInterface {
-  "idMahasiswa": number;
-  "idDosen": number;
-  "bobot": number;
-  "hasil": number;
   "nidn": string;
   "namadsn": string;
   "idPendidikan": number;
@@ -35,14 +35,22 @@ export class Tmviewhistorykriteria implements TmviewhistorykriteriaInterface {
   "idKompetensi": number;
   "idKuota": number;
   "telephone": string;
-  "nim": string;
-  "periode": number;
-  "namamhs": string;
+  "hasil": number;
+  "bobot": number;
+  "idDosen": number;
+  "id": number;
+  "idMahasiswa": number;
+  "judulskripsi": string;
   "kategori1": number;
   "kategori2": number;
   "kategori3": number;
-  "judulskripsi": string;
-  "id": number;
+  "useriddsn": number;
+  "useridmhs": number;
+  "namamhs": string;
+  "picturesdsn": string;
+  "picturesmhs": string;
+  "nim": string;
+  "periode": number;
   constructor(data?: TmviewhistorykriteriaInterface) {
     Object.assign(this, data);
   }
@@ -74,22 +82,6 @@ export class Tmviewhistorykriteria implements TmviewhistorykriteriaInterface {
       name: 'Tmviewhistorykriteria',
       plural: 'Tmviewhistorykriteria',
       properties: {
-        "idMahasiswa": {
-          name: 'idMahasiswa',
-          type: 'number'
-        },
-        "idDosen": {
-          name: 'idDosen',
-          type: 'number'
-        },
-        "bobot": {
-          name: 'bobot',
-          type: 'number'
-        },
-        "hasil": {
-          name: 'hasil',
-          type: 'number'
-        },
         "nidn": {
           name: 'nidn',
           type: 'string'
@@ -118,16 +110,28 @@ export class Tmviewhistorykriteria implements TmviewhistorykriteriaInterface {
           name: 'telephone',
           type: 'string'
         },
-        "nim": {
-          name: 'nim',
-          type: 'string'
-        },
-        "periode": {
-          name: 'periode',
+        "hasil": {
+          name: 'hasil',
           type: 'number'
         },
-        "namamhs": {
-          name: 'namamhs',
+        "bobot": {
+          name: 'bobot',
+          type: 'number'
+        },
+        "idDosen": {
+          name: 'idDosen',
+          type: 'number'
+        },
+        "id": {
+          name: 'id',
+          type: 'number'
+        },
+        "idMahasiswa": {
+          name: 'idMahasiswa',
+          type: 'number'
+        },
+        "judulskripsi": {
+          name: 'judulskripsi',
           type: 'string'
         },
         "kategori1": {
@@ -142,12 +146,32 @@ export class Tmviewhistorykriteria implements TmviewhistorykriteriaInterface {
           name: 'kategori3',
           type: 'number'
         },
-        "judulskripsi": {
-          name: 'judulskripsi',
+        "useriddsn": {
+          name: 'useriddsn',
+          type: 'number'
+        },
+        "useridmhs": {
+          name: 'useridmhs',
+          type: 'number'
+        },
+        "namamhs": {
+          name: 'namamhs',
           type: 'string'
         },
-        "id": {
-          name: 'id',
+        "picturesdsn": {
+          name: 'picturesdsn',
+          type: 'string'
+        },
+        "picturesmhs": {
+          name: 'picturesmhs',
+          type: 'string'
+        },
+        "nim": {
+          name: 'nim',
+          type: 'string'
+        },
+        "periode": {
+          name: 'periode',
           type: 'number'
         },
       },

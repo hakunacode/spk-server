@@ -71,6 +71,7 @@ import { TmMahasiswaApi } from './services/custom/TmMahasiswa';
 import { TmviewhistorykriteriaApi } from './services/custom/Tmviewhistorykriteria';
 import { ChatroomApi } from './services/custom/Chatroom';
 import { ChatisiApi } from './services/custom/Chatisi';
+import { TviewgroupdataApi } from './services/custom/Tviewgroupdata';
 /**
 * @module SDKBrowserModule
 * @description
@@ -125,6 +126,7 @@ export class SDKBrowserModule {
         TmviewhistorykriteriaApi,
         ChatroomApi,
         ChatisiApi,
+        TviewgroupdataApi,
         internalStorageProvider,
         { provide: SDKStorage, useClass: StorageBrowser },
         { provide: SocketDriver, useClass: SocketBrowser }

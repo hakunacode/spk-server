@@ -23,6 +23,7 @@ import { TmMahasiswa } from '../../models/TmMahasiswa';
 import { Tmviewhistorykriteria } from '../../models/Tmviewhistorykriteria';
 import { Chatroom } from '../../models/Chatroom';
 import { Chatisi } from '../../models/Chatisi';
+import { Tviewgroupdata } from '../../models/Tviewgroupdata';
 
 export interface Models { [name: string]: any }
 
@@ -53,6 +54,7 @@ export class SDKModels {
     Tmviewhistorykriteria: Tmviewhistorykriteria,
     Chatroom: Chatroom,
     Chatisi: Chatisi,
+    Tviewgroupdata: Tviewgroupdata,
     
   };
 

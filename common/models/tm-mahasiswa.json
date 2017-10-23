@@ -235,6 +235,22 @@
       },
       "_selectable": false
     },
+    "status": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "status",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
     "kelas": {
       "type": "String",
       "required": false,
@@ -243,6 +259,22 @@
       "scale": null,
       "mysql": {
         "columnName": "kelas",
+        "dataType": "varchar",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "peminatan": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "peminatan",
         "dataType": "varchar",
         "dataLength": 20,
         "dataPrecision": null,

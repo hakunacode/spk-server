@@ -22,5 +22,6 @@ export * from './TmMahasiswa';
 export * from './Tmviewhistorykriteria';
 export * from './Chatroom';
 export * from './Chatisi';
+export * from './Tviewgroupdata';
 export * from './SDKModels';
 export * from './logger.service';

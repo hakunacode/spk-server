@@ -48,21 +48,24 @@ module.exports = function (Auth) {
           nama: params.nama,
           ttl: params.ttl,
           pictures: params.pictures,
-          jenisKelamin: params.jenisKelamin,
-          tahunmasuk: params.tahunmasuk,
+          telphone: params.telphone,
+          jeniskelamin: params.jenisKelamin,
+          kelas: params.kelas,
+          peminatan: params.peminatan,
+          periode: params.periode,
           judulskripsi: params.judulskripsi,
           kategori1: params.kategori1,
           kategori2: params.kategori2,
           kategori3: params.kategori3,
           userid: success.id
         }, function (err, response) {
-          console.log(response, 'jj', err)
           if (err) {
             cb(null, []);
           } else {
             ContainerModel.createContainer({
               name: 'temp_' + success.id
             }, function (err, req) {
+               console.log(req, 'jj', err)
               if (err) {
                 cb(null, []);
               } else {
@@ -232,7 +235,7 @@ module.exports = function (Auth) {
           });
         });
       } else {
-        cb(null,[]);
+        cb(null, []);
       }
     });
   }
@@ -268,6 +271,7 @@ module.exports = function (Auth) {
       }
       , function (err, value) {
         if (err) {
+          console.log(err)
           cb(null, []);
         } else {
           cb(null, value);

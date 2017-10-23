@@ -3,6 +3,7 @@
 declare var Object: any;
 export interface TmDosenInterface {
   "telephone"?: string;
+  "status"?: string;
   "ttl"?: string;
   "pictures"?: string;
   "created"?: Date;
@@ -20,6 +21,7 @@ export interface TmDosenInterface {
 
 export class TmDosen implements TmDosenInterface {
   "telephone": string;
+  "status": string;
   "ttl": string;
   "pictures": string;
   "created": Date;
@@ -66,6 +68,10 @@ export class TmDosen implements TmDosenInterface {
       properties: {
         "telephone": {
           name: 'telephone',
+          type: 'string'
+        },
+        "status": {
+          name: 'status',
           type: 'string'
         },
         "ttl": {

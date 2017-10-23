@@ -10,15 +10,15 @@ import { JSONSearchParams } from '../core/search.params';
 import { ErrorHandler } from '../core/error.service';
 import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Rx';
-import { Tmviewhistorykriteria } from '../../models/Tmviewhistorykriteria';
+import { Tviewgroupdata } from '../../models/Tviewgroupdata';
 import { SocketConnection } from '../../sockets/socket.connections';
 
 
 /**
- * Api services for the `Tmviewhistorykriteria` model.
+ * Api services for the `Tviewgroupdata` model.
  */
 @Injectable()
-export class TmviewhistorykriteriaApi extends BaseLoopBackApi {
+export class TviewgroupdataApi extends BaseLoopBackApi {
 
   constructor(
     @Inject(Http) protected http: Http,
@@ -44,13 +44,13 @@ export class TmviewhistorykriteriaApi extends BaseLoopBackApi {
    *
    * <em>
    * (The remote method definition does not provide any description.
-   * This usually means the response is a `Tmviewhistorykriteria` object.)
+   * This usually means the response is a `Tviewgroupdata` object.)
    * </em>
    */
   public patchOrCreate(data: any = {}, customHeaders?: Function): Observable<any> {
     let _method: string = "PATCH";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/Tmviewhistorykriteria";
+    "/Tviewgroupdata";
     let _routeParams: any = {};
     let _postBody: any = {
       data: data
@@ -63,7 +63,7 @@ export class TmviewhistorykriteriaApi extends BaseLoopBackApi {
   /**
    * Patch attributes for a model instance and persist it into the data source.
    *
-   * @param {any} id Tmviewhistorykriteria id
+   * @param {any} id Tviewgroupdata id
    *
    * @param {object} data Request data.
    *
@@ -75,13 +75,13 @@ export class TmviewhistorykriteriaApi extends BaseLoopBackApi {
    *
    * <em>
    * (The remote method definition does not provide any description.
-   * This usually means the response is a `Tmviewhistorykriteria` object.)
+   * This usually means the response is a `Tviewgroupdata` object.)
    * </em>
    */
   public patchAttributes(id: any, data: any = {}, customHeaders?: Function): Observable<any> {
     let _method: string = "PATCH";
     let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/Tmviewhistorykriteria/:id";
+    "/Tviewgroupdata/:id";
     let _routeParams: any = {
       id: id
     };
@@ -94,37 +94,10 @@ export class TmviewhistorykriteriaApi extends BaseLoopBackApi {
   }
 
   /**
-   * <em>
-         * (The remote method definition does not provide any description.)
-         * </em>
-   *
-   * @param {Object} params 
-   *
-   * @returns {object} An empty reference that will be
-   *   populated with the actual data once the response is returned
-   *   from the server.
-   *
-   * <em>
-   * (The remote method definition does not provide any description.
-   * This usually means the response is a `Tmviewhistorykriteria` object.)
-   * </em>
-   */
-  public exportExcel(params: any, customHeaders?: Function): Observable<any> {
-    let _method: string = "GET";
-    let _url: string = LoopBackConfig.getPath() + "/" + LoopBackConfig.getApiVersion() +
-    "/Tmviewhistorykriteria/exportExcel";
-    let _routeParams: any = {};
-    let _postBody: any = {};
-    let _urlParams: any = {};
-    let result = this.request(_method, _url, _routeParams, _urlParams, _postBody, null, customHeaders);
-    return result;
-  }
-
-  /**
    * The name of the model represented by this $resource,
-   * i.e. `Tmviewhistorykriteria`.
+   * i.e. `Tviewgroupdata`.
    */
   public getModelName() {
-    return "Tmviewhistorykriteria";
+    return "Tviewgroupdata";
   }
 }

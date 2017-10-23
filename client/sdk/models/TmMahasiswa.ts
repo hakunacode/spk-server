@@ -16,7 +16,9 @@ export interface TmMahasiswaInterface {
   "tahunmasuk"?: string;
   "telphone"?: string;
   "ttl"?: string;
+  "status"?: string;
   "kelas"?: string;
+  "peminatan"?: string;
   "proses"?: string;
 }
 
@@ -35,7 +37,9 @@ export class TmMahasiswa implements TmMahasiswaInterface {
   "tahunmasuk": string;
   "telphone": string;
   "ttl": string;
+  "status": string;
   "kelas": string;
+  "peminatan": string;
   "proses": string;
   constructor(data?: TmMahasiswaInterface) {
     Object.assign(this, data);
@@ -124,8 +128,16 @@ export class TmMahasiswa implements TmMahasiswaInterface {
           name: 'ttl',
           type: 'string'
         },
+        "status": {
+          name: 'status',
+          type: 'string'
+        },
         "kelas": {
           name: 'kelas',
+          type: 'string'
+        },
+        "peminatan": {
+          name: 'peminatan',
           type: 'string'
         },
         "proses": {
